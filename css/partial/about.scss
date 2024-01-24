@@ -1,0 +1,48 @@
+.about-us {
+    @extend %-w100;
+    padding: 40px 0px;
+    .about-content {
+        .about-detail {
+            margin: 0 -15px;
+            display: flex;
+            .about-text {
+                margin-bottom: 20px; 
+            }
+            
+        }
+        .about-title {
+            @extend %-w100;
+            text-align: center;
+            margin-bottom: 30px;
+            h2 {
+                font-size: 30px;
+                display: inline-block;
+            } 
+        }
+        .content {
+            padding: 0 15px;
+            @include width_maxwidth (100%,inline-block,50%);
+            p {
+                font-size: $medium-size;
+                line-height: $medium-size + 10px;
+            }
+            ul {
+                padding-left: 30px;
+            li {
+                list-style: auto;
+                font-size: $medium-size;
+                line-height: $medium-size + 6px;
+                margin-bottom: 5px;
+            }
+        }
+            .btn {
+                margin-top: 20px;
+                a{
+                    @extend %btn;
+                    
+                }
+            }
+        }
+    }
+
+}

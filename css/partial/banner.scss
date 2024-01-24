@@ -1,0 +1,45 @@
+.banner-main {
+    padding: 180px 0px;
+    background-color:$seconday-color;
+.banner-content {
+    .banner-text-slider,.banner-image-slider {
+        width: 50%;
+        display: inline-block;
+    }
+    @extend %-flex;
+    .banner-content-text {
+        @include width_maxwidth (100%,inline-block,50%);
+        .banner-title {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 50px;
+                line-height: normal;
+            }
+        }
+        .banner-subtitle {
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: flex;
+            a {
+            @extend %btn;
+            &:hover {
+                background-color: $black-color;
+                color: $white-color;
+            }
+            }
+        }
+    }
+    .banner-image {
+        @include width_maxwidth (100%,inline-flex,50%);
+            justify-content: flex-end;
+        .cover-img {
+            @include width_maxwidth (100%,inline-block,400px);
+            img {
+                @extend %img;
+                filter: drop-shadow(1px 2px 1px #000);
+            }
+        }
+    }
+}
+}

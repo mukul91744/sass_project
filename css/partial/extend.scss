@@ -1,0 +1,31 @@
+%-flex-center  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+%-flex {
+    display: flex;
+    align-items: center;
+}
+%-w100 {
+    width: 100%;
+    display: inline-block;
+}
+%img {
+    width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+%btn {
+    font-size:$small-size;
+    display: inline-block;
+    padding: 12px 40px;
+    color: $white-color;
+    box-shadow: 1px 1px 6px #ddd;
+    background: $btn-bg-color;
+    transition: all 0.4s ease;
+    &:hover {
+        background-color: $black-color;
+        color: $white-color;
+    }
+}

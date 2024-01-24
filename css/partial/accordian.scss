@@ -1,0 +1,85 @@
+.accordion {
+    background-color:$seconday-color;
+    padding: 60px 0px;
+    @extend %-w100;
+    .accordion-wrapper {
+        @extend %-flex;
+        margin: 0 -15px;
+        .accordion-function {
+            @include width_maxwidth(100%,inline-block,50%);
+            padding:0 15px;
+            .accordion-title {
+                margin-bottom: 15px;
+                h2 {
+                    font-size: 25px;
+                    font-weight: $regular;
+                    span {
+                        font-weight: $bold;
+                    }
+                }
+            }
+            .accor-subtitle {
+                margin-bottom: 40px;
+            }
+            .accoridon-part {
+                .content {
+                    margin-top: 20px;
+                }
+                margin-bottom: 10px;
+            .accordion-head  {
+                
+                background-color: $white-color;
+                padding: 20px;
+                
+            .heading {
+                @extend %-flex-center;
+                cursor: pointer;
+                ol {
+                    padding-left: 20px;
+                li {
+                    list-style:auto;
+                    font-size:$medium-size;
+                    font-weight: $medium;
+                    &::marker {
+                        color: $black-color;
+                        font-size: $large-size;
+                    }
+                }
+            }
+            
+                .icone {
+                    padding-left: 20px;
+                }
+            }
+        }
+        
+        }
+        .accordion-head.active {
+            & .icone {
+                transform: rotatex(180deg);
+                color:$primary-color; 
+            }
+            
+            & li {
+                color:$primary-color;
+                &::marker {
+                    color: $primary-color !important;
+                    font-size: $large-size;
+                }     
+            }
+        }
+        }
+        .accordion-img {
+            @include width_maxwidth(100%,inline-block,50%);
+            padding:0 15px;
+            .img {
+                @include width_maxwidth(100%,inline-block,400px);
+                float: right;
+                img {
+                    @extend %img;
+                    filter: drop-shadow(1px 2px 1px #000);
+                }
+            }
+        }
+    }
+}

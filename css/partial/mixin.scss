@@ -1,0 +1,14 @@
+@mixin width_maxwidth ($with,$dpl,$m-width) {
+    width:$with;
+    display: $dpl;
+    max-width: $m-width;
+}
+@mixin para ($size,$color,$weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+@mixin flex_end ($dlex,$justify) {
+    display: $dlex;
+    justify-content: $justify;
+}

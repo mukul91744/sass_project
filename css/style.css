@@ -1,0 +1,508 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Black.woff2") format("woff2"), url("../../fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.woff2") format("woff2"), url("../../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../../fonts/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Light.woff2") format("woff2"), url("../../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Medium.woff2") format("woff2"), url("../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Thin.woff2") format("woff2"), url("../../fonts/Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  font-family: "Inter";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head .heading, #header .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion .accordion-wrapper, .banner-main .banner-content, #header .header-wrapper nav .nav-wrapper ul {
+  display: flex;
+  align-items: center;
+}
+
+.service-main .service .service-cards .service-card .card-content, .service-main .service, .accordion, .about-us .about-content .about-title, .about-us {
+  width: 100%;
+  display: inline-block;
+}
+
+.service-main .service .service-cards .service-card .card-content .card-icone img, .accordion .accordion-wrapper .accordion-img .img img, .banner-main .banner-content .banner-image .cover-img img, #header .header-wrapper .logo .logo-content img {
+  width: 100%;
+  vertical-align: top;
+  height: auto;
+}
+
+.about-us .about-content .content .btn a, .banner-main .banner-content .banner-content-text .btn a {
+  font-size: 16px;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #ffffff;
+  box-shadow: 1px 1px 6px #ddd;
+  background: #F44336;
+  transition: all 0.4s ease;
+}
+.about-us .about-content .content .btn a:hover, .banner-main .banner-content .banner-content-text .btn a:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+#header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+#header .header-wrapper nav {
+  width: 100%;
+  display: flex;
+  max-width: 70%;
+  justify-content: flex-end;
+}
+#header .header-wrapper nav .nav-wrapper ul li {
+  margin: 0 15px;
+}
+#header .header-wrapper nav .nav-wrapper ul li:last-child {
+  margin-right: 0px;
+}
+#header .header-wrapper nav .nav-wrapper ul li a {
+  font-size: 17px;
+  padding: 10px 0px;
+  display: inline-block;
+  color: #000;
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+#header .header-wrapper nav .nav-wrapper ul li a:hover {
+  color: #f00000;
+}
+#header .header-wrapper .logo {
+  width: 100%;
+  max-width: 30%;
+}
+#header .header-wrapper .logo .logo-content {
+  width: 100%;
+  display: inline-block;
+  max-width: 220px;
+}
+#header .header-wrapper .logo .logo-content a {
+  display: inline-block;
+}
+.banner-main {
+  padding: 180px 0px;
+  background-color: #e6f0f9;
+}
+.banner-main .banner-content .banner-text-slider, .banner-main .banner-content .banner-image-slider {
+  width: 50%;
+  display: inline-block;
+}
+.banner-main .banner-content .banner-content-text {
+  width: 100%;
+  display: inline-block;
+  max-width: 50%;
+}
+.banner-main .banner-content .banner-content-text .banner-title {
+  margin-bottom: 20px;
+}
+.banner-main .banner-content .banner-content-text .banner-title h1 {
+  font-size: 50px;
+  line-height: normal;
+}
+.banner-main .banner-content .banner-content-text .banner-subtitle {
+  margin-bottom: 20px;
+}
+.banner-main .banner-content .banner-content-text .btn {
+  display: flex;
+}
+.banner-main .banner-content .banner-content-text .btn a:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+.banner-main .banner-content .banner-image {
+  width: 100%;
+  display: inline-flex;
+  max-width: 50%;
+  justify-content: flex-end;
+}
+.banner-main .banner-content .banner-image .cover-img {
+  width: 100%;
+  display: inline-block;
+  max-width: 400px;
+}
+.banner-main .banner-content .banner-image .cover-img img {
+  filter: drop-shadow(1px 2px 1px #000);
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.about-us {
+  padding: 40px 0px;
+}
+.about-us .about-content .about-detail {
+  margin: 0 -15px;
+  display: flex;
+}
+.about-us .about-content .about-detail .about-text {
+  margin-bottom: 20px;
+}
+.about-us .about-content .about-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-us .about-content .about-title h2 {
+  font-size: 30px;
+  display: inline-block;
+}
+.about-us .about-content .content {
+  padding: 0 15px;
+  width: 100%;
+  display: inline-block;
+  max-width: 50%;
+}
+.about-us .about-content .content p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.about-us .about-content .content ul {
+  padding-left: 30px;
+}
+.about-us .about-content .content ul li {
+  list-style: auto;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.about-us .about-content .content .btn {
+  margin-top: 20px;
+}
+.accordion {
+  background-color: #e6f0f9;
+  padding: 60px 0px;
+}
+.accordion .accordion-wrapper {
+  margin: 0 -15px;
+}
+.accordion .accordion-wrapper .accordion-function {
+  width: 100%;
+  display: inline-block;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.accordion .accordion-wrapper .accordion-function .accordion-title {
+  margin-bottom: 15px;
+}
+.accordion .accordion-wrapper .accordion-function .accordion-title h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.accordion .accordion-wrapper .accordion-function .accordion-title h2 span {
+  font-weight: 600;
+}
+.accordion .accordion-wrapper .accordion-function .accor-subtitle {
+  margin-bottom: 40px;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part {
+  margin-bottom: 10px;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .content {
+  margin-top: 20px;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head .heading {
+  cursor: pointer;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head .heading ol {
+  padding-left: 20px;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head .heading ol li {
+  list-style: auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head .heading ol li::marker {
+  color: #000;
+  font-size: 20px;
+}
+.accordion .accordion-wrapper .accordion-function .accoridon-part .accordion-head .heading .icone {
+  padding-left: 20px;
+}
+.accordion .accordion-wrapper .accordion-function .accordion-head.active .icone {
+  transform: rotatex(180deg);
+  color: #f00000;
+}
+.accordion .accordion-wrapper .accordion-function .accordion-head.active li {
+  color: #f00000;
+}
+.accordion .accordion-wrapper .accordion-function .accordion-head.active li::marker {
+  color: #f00000 !important;
+  font-size: 20px;
+}
+.accordion .accordion-wrapper .accordion-img {
+  width: 100%;
+  display: inline-block;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.accordion .accordion-wrapper .accordion-img .img {
+  width: 100%;
+  display: inline-block;
+  max-width: 400px;
+  float: right;
+}
+.accordion .accordion-wrapper .accordion-img .img img {
+  filter: drop-shadow(1px 2px 1px #000);
+}
+
+.service-main {
+  padding: 60px 0px;
+}
+.service-main .service .serice-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.service-main .service .serice-title h2 {
+  font-size: 30px;
+}
+.service-main .service .subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.service-main .service .service-cards {
+  display: flex;
+  margin: 0 -15px;
+}
+.service-main .service .service-cards .service-card {
+  width: 100%;
+  display: inline-block;
+  max-width: 25%;
+  padding: 0 15px;
+}
+.service-main .service .service-cards .service-card .card-content {
+  padding: 40px 20px;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+}
+.service-main .service .service-cards .service-card .card-content:after {
+  width: 100%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 0%;
+  z-index: -1;
+  opacity: 0;
+}
+.service-main .service .service-cards .service-card .card-content .card-icone {
+  width: 100%;
+  display: inline-block;
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+.service-main .service .service-cards .service-card .card-content .card-title {
+  margin-bottom: 10px;
+}
+.service-main .service .service-cards .service-card .card-content .card-title h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.service-main .service .service-cards .service-card .card-content:hover:after {
+  opacity: 1;
+  height: 234px;
+}
+.service-main .service .service-cards .service-card .card-content:hover img {
+  filter: invert(1);
+}
+.service-main .service .service-cards .service-card .card-content:hover h3 {
+  color: #ffffff;
+}
+.service-main .service .service-cards .service-card .card-content:hover p {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */

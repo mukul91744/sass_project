@@ -1,0 +1,48 @@
+#header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    .header-wrapper {
+        @extend %-flex-center;
+        nav {
+            @include width_maxwidth (100%,flex,70%) ;
+            justify-content: flex-end;
+            .nav-wrapper {
+                ul {
+                    @extend %-flex;
+                    li {
+                        margin: 0 15px;
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                        a {
+                            font-size:17px;
+                            padding: 10px 0px;
+                            display: inline-block;
+                            color: $black-color;
+                            font-weight: $regular;
+                            transition: all 0.4s ease;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            width: 100%;
+            max-width: 30%; 
+            .logo-content {
+                @include width_maxwidth(100%,inline-block,220px); 
+                 a {
+                    display: inline-block;
+                 }
+                img {
+                    @extend %img;                    
+                }
+            }
+        }
+        
+    }
+}
